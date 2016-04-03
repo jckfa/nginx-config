@@ -2,22 +2,21 @@
 
 ## Redirects
 
-http://
-jackfahnestock.com
-www.jackfahnestock.com
-jackf.me
+http:// <br/>
+jackfahnestock.com <br/>
+www.jackfahnestock.com <br/>
+jackf.me <br/>
 www.jackf.me
 
 and
 
-https://
-jackfahnestock.com
-www.jackfahnestock.com
+https:// <br/>
+jackfahnestock.com <br/>
+www.jackfahnestock.com <br/>
 www.jackf.me
 
-all redirect to
+all redirect to <br/>
 https://jackf.me
-
 
 ## Encryption
 
