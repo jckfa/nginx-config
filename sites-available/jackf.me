@@ -1,0 +1,42 @@
+server {
+        listen 80;
+        listen 443 ssl http2;
+        listen [::]:80;
+        listen [::]:443 ssl http2;
+
+        server_name jackfahnestock.com www.jackfahnestock.com;
+        return 301 https://jackf.me$request_uri;
+
+        include /etc/nginx/conf.d/tls.conf;
+}
+
+server {
+	listen 80;
+	listen [::]:80 ipv6only=on;
+
+	server_name jackf.me www.jackf.me;
+	return 301 https://jackf.me$request_uri;
+	
+	location / {
+		try_files $uri $uri/ =404;
+	}
+}
+
+server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+
+        server_name www.jackf.me;
+        return 301 https://jackf.me$request_uri;
+
+        include /etc/nginx/conf.d/tls.conf;
+}
+
+server {
+	listen 443 default_server ssl http2;
+	listen [::]:443 default_server ssl http2 ipv6only=on;
+
+	server_name jackf.me;
+	
+	include /etc/nginx/conf.d/tls.conf;
+}
