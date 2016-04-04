@@ -25,7 +25,7 @@ all redirect to <br>
 
 ## Other
 
-- HTTP2
+- HTTP/2
 
 ## Sources
 

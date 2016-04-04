@@ -1,21 +1,6 @@
-ssl on;	
+ssl on;
 
-location / {
-    try_files $uri $uri/ =404;
-}
-
-error_page 403 404 /custom_40x.html;
-location = /custom_40x.html {
-    root /var/www/jackfahnestock.com/error_pages;
-    internal;
-}
-
-error_page 500 502 503 504 /custom_50x.html;
-location = /custom_50x.html {
-    root /var/www/jackfahnestock.com/error_pages;
-    internal;
-}
-
+# Used by webroot for Let's Encrypt
 location ~ /.well-known {
     allow all;
 }
