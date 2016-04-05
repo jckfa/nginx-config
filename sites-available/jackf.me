@@ -23,9 +23,7 @@ server {
 	server_name jackf.me www.jackf.me;
 	return 301 https://jackf.me$request_uri;
 	
-	location / {
-		try_files $uri $uri/ =404;
-	}
+	include /etc/nginx/conf.d/error-pages.conf;
 }
 
 server {
