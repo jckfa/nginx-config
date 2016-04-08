@@ -38,6 +38,8 @@ server {
         root /var/www/jackfahnestock.com;
         index index.html index.htm;
 
+	# gzip_static  on;
+
         location / {
             try_files $uri $uri/ =404;
         }
