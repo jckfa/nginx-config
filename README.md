@@ -3,17 +3,17 @@
 ## Redirects
 
         http://
+	jackf.me
+    www.jackf.me
         jackfahnestock.com
     www.jackfahnestock.com
-        jackf.me
-    www.jackf.me
 
 and
 
         https://
+    www.jackf.me
         jackfahnestock.com
     www.jackfahnestock.com
-    www.jackf.me
 
 all redirect to <br>
     https://jackf.me
@@ -27,8 +27,8 @@ all redirect to <br>
 ## Other
 
 - HTTP/2
+- Static gzipping
 
 ## Sources
 
-- https://gist.github.com/konklone/6532544
 - https://github.com/h5bp/server-configs-nginx
