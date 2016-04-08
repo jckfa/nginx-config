@@ -15,8 +15,7 @@ and
                 jackfahnestock.com
             www.jackfahnestock.com
 
-all redirect to <br>
-https://jackf.me
+↳ https://jackf.me
 
 ## Encryption
 
