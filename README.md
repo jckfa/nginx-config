@@ -27,7 +27,6 @@ https://jackf.me
 ## Other
 
 - HTTP/2 (working on it)
-- Static gzipping
 
 ## Sources
 
