@@ -26,7 +26,7 @@ all redirect to <br>
 
 ## Other
 
-- HTTP/2
+- HTTP/2 (working on it)
 - Static gzipping
 
 ## Sources
