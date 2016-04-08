@@ -2,18 +2,18 @@
 
 ## Redirects
 
-        http://
-        jackf.me
-    www.jackf.me
-        jackfahnestock.com
-    www.jackfahnestock.com
+     http://
+                jackf.me
+            www.jackf.me
+                jackfahnestock.com
+            www.jackfahnestock.com
 
 and
 
-        https://
-    www.jackf.me
-        jackfahnestock.com
-    www.jackfahnestock.com
+    https://
+            www.jackf.me
+                jackfahnestock.com
+            www.jackfahnestock.com
 
 all redirect to <br>
 https://jackf.me
