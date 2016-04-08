@@ -3,7 +3,7 @@
 ## Redirects
 
         http://
-	jackf.me
+        jackf.me
     www.jackf.me
         jackfahnestock.com
     www.jackfahnestock.com
@@ -16,7 +16,7 @@ and
     www.jackfahnestock.com
 
 all redirect to <br>
-    https://jackf.me
+https://jackf.me
 
 ## Encryption
 
