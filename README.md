@@ -25,7 +25,7 @@ and
 
 ## Other
 
-- HTTP/2 (working on it)
+- HTTP/2
 
 ## Sources
 
