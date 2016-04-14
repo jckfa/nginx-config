@@ -20,7 +20,7 @@ and
 ## Encryption
 
 - [A+ SSL Labs Score](https://www.ssllabs.com/ssltest/analyze.html?d=jackf.me&latest)
-- [Let's Encrypt cert](http://vpshostserver.com/how-to-secure-nginx-with-lets-encrypt-on-ubuntu-14-04.html)
+- [Let's Encrypt cert](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-14-04)
 - HSTS
 
 ## Other
