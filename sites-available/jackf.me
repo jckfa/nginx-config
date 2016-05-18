@@ -26,6 +26,7 @@ server {
         
 	return 301 https://jackf.me$request_uri;
 
+        include /etc/nginx/conf.d/directive-only/tls-paths/jackf.me;
         include /etc/nginx/conf.d/directive-only/tls.conf;
 }
 
@@ -51,5 +52,6 @@ server {
         }
 
 	include /etc/nginx/conf.d/main.conf;
+        include /etc/nginx/conf.d/directive-only/tls-paths/jackf.me;
 	include /etc/nginx/conf.d/directive-only/tls.conf;
 }
