@@ -17,7 +17,7 @@ server {
   return 301 https://unccdesign.club$request_uri;
 
   include /etc/nginx/conf.d/directive-only/tls-paths/unccdesign.club;
-  include /etc/nginx/conf.d/directive-only/tls.conf;
+  include /etc/nginx/conf.d/directive-only/tls2.conf;
 }
 
 server {
@@ -43,5 +43,5 @@ server {
 
   include /etc/nginx/conf.d/main.conf;
   include /etc/nginx/conf.d/directive-only/tls-paths/unccdesign.club;
-  include /etc/nginx/conf.d/directive-only/tls.conf;
+  include /etc/nginx/conf.d/directive-only/tls2.conf;
 }
