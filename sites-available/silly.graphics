@@ -2,21 +2,21 @@ server {
   listen 80;
   listen [::]:80;
 
-  server_name     unccdesign.club
-              www.unccdesign.club;
+  server_name     silly.graphics
+              www.silly.graphics;
 
-  return 301 https://unccdesign.club$request_uri;
+  return 301 https://silly.graphics$request_uri;
 }
 
 server {
   listen 443 ssl http2;
   listen [::]:443 ssl http2;
 
-  server_name www.unccdesign.club;
+  server_name www.silly.graphics;
 
-  return 301 https://unccdesign.club$request_uri;
+  return 301 https://silly.graphics$request_uri;
 
-  include /etc/nginx/conf.d/directive-only/tls-paths/unccdesign.club;
+  include /etc/nginx/conf.d/directive-only/tls-paths/silly.graphics;
   include /etc/nginx/conf.d/directive-only/tls.conf;
 }
 
@@ -24,9 +24,9 @@ server {
   listen 443 ssl http2;
   listen [::]:443 ssl http2;
 
-  server_name unccdesign.club;
+  server_name silly.graphics;
 
-  root /var/www/unccdesign.club;
+  root /var/www/silly.graphics;
   index index.html index.htm;
 
 # gzip_static  on;
@@ -37,11 +37,11 @@ server {
 
   error_page 404 /custom_40x.html;
   location = /custom_40x.html {
-    root /var/www/unccdesign.club/error_pages;
+    root /var/www/silly.graphics/error_pages;
     internal;
   }
 
   include /etc/nginx/conf.d/main.conf;
-  include /etc/nginx/conf.d/directive-only/tls-paths/unccdesign.club;
+  include /etc/nginx/conf.d/directive-only/tls-paths/silly.graphics;
   include /etc/nginx/conf.d/directive-only/tls.conf;
 }

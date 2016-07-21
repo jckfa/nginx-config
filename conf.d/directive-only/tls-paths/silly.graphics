@@ -1,0 +1,3 @@
+ssl_certificate         /etc/letsencrypt/live/silly.graphics/fullchain.pem;
+ssl_certificate_key     /etc/letsencrypt/live/silly.graphics/privkey.pem;
+ssl_trusted_certificate /etc/letsencrypt/live/silly.graphics/chain.pem;
