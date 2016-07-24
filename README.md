@@ -1,7 +1,8 @@
 # My Nginx Config Files :: Summary
 
 ## Websites
-- https://jackf.me
+- https://jackf.me (jackfahnestock.com)
+- https://silly.graphics
 - https://unccdesign.club
 
 ## Redirects
@@ -21,7 +22,7 @@ and
 
 ↳ https://jackf.me
 
-(and the same pattern for unccdesign.club)
+(and the same pattern for my other sites)
 
 ## Encryption
 
@@ -33,8 +34,8 @@ and
 
 ## Other
 
-- HTTP/2
-- gzip
+- HTTP/2 enabled
+- gzip compression enabled
 
 ## Sources
 
