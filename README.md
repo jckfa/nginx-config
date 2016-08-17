@@ -1,7 +1,7 @@
 # My Nginx Config Files :: Summary
 
 ## Websites
-- https://jackf.me (jackfahnestock.com)
+- https://jackf.me / https://jackfahnestock.com
 - https://silly.graphics
 - ~~https://unccdesign.club~~ [retired]
 
