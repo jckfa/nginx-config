@@ -1,7 +1,7 @@
 #!/bin/bash
 
 web_service='nginx'
-config_file="~/nginx/webroot/webroot-config--silly.graphics"
+config_file="/home/jack/nginx/webroot/webroot-config--silly.graphics"
 
 le_path='~/letsencrypt'
 exp_limit=30;
