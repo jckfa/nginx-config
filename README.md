@@ -3,7 +3,7 @@
 ## Websites
 - https://jackf.me (jackfahnestock.com)
 - https://silly.graphics
-- https://unccdesign.club
+- ~~https://unccdesign.club~~ [retired]
 
 ## Redirects
 
