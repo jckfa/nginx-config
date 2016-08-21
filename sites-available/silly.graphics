@@ -29,15 +29,15 @@ server {
   root /var/www/silly.graphics;
   index index.html index.htm;
 
-# gzip_static  on;
+  gzip_static  on;
 
   location / {
     try_files $uri $uri/ =404;
   }
 
-  error_page 404 /custom_40x.html;
-  location = /custom_40x.html {
-    root /var/www/silly.graphics/error_pages;
+  error_page 404 /404/index.html;
+  location = /404 {
+    root /var/www/silly.graphics/404;
     internal;
   }
 
