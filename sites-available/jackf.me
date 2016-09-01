@@ -46,10 +46,6 @@ server {
   }
 
   error_page 404 /404/index.html;
-  location = /404 {
-    root /var/www/jackf.me/404;
-    internal;
-  }
 
   include /etc/nginx/conf.d/main.conf;
   include /etc/nginx/conf.d/directive-only/tls-paths/jackf.me;

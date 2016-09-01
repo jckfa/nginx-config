@@ -36,10 +36,6 @@ server {
   }
 
   error_page 404 /custom_40x.html;
-  location = /custom_40x.html {
-    root /var/www/unccdesign.club/error_pages;
-    internal;
-  }
 
   include /etc/nginx/conf.d/main.conf;
   include /etc/nginx/conf.d/directive-only/tls-paths/unccdesign.club;
