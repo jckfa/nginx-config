@@ -1,0 +1,43 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  server_name     crude-type.us
+              www.crude-type.us;
+
+  return 301 https://crude-type.us$request_uri;
+}
+
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  server_name www.crude-type.us;
+
+  return 301 https://crude-type.us$request_uri;
+
+  include /etc/nginx/conf.d/directive-only/tls-paths/crude-type.us;
+  include /etc/nginx/conf.d/directive-only/tls.conf;
+}
+
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  server_name crude-type.us;
+
+  root /var/www/crude-type.us;
+  index index.html index.htm;
+
+  # gzip_static  on;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+
+  error_page 404 /404/index.html;
+
+  include /etc/nginx/conf.d/main.conf;
+  include /etc/nginx/conf.d/directive-only/tls-paths/crude-type.us;
+  include /etc/nginx/conf.d/directive-only/tls.conf;
+}
