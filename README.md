@@ -4,6 +4,7 @@
 - https://jackf.me / https://jackfahnestock.com
 - https://silly.graphics
 - https://silly-type.us
+- https://crude-type.us
 - ~~https://unccdesign.club~~ [retired]
 
 ## Redirects
