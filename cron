@@ -1,3 +1,0 @@
-30 2 * * 1 ~/nginx/webroot/webroot-renew--jackf.me >> /var/log/webroot-renew--jackf.me.log
-30 2 * * 1 ~/nginx/webroot/webroot-renew--silly.graphics >> /var/log/webroot-renew--silly.graphics.log
-30 2 * * 1 ~/nginx/webroot/webroot-renew--unccdesign.club >> /var/log/webroot-renew--unccdesign.club.log
