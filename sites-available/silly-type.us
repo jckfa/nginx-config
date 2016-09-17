@@ -41,4 +41,3 @@ server {
   include /etc/nginx/conf.d/directive-only/tls-paths/silly-type.us;
   include /etc/nginx/conf.d/directive-only/tls.conf;
 }
-
