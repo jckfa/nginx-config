@@ -1,3 +1,0 @@
-ssl_certificate         /etc/letsencrypt/live/crude-type.us/fullchain.pem;
-ssl_certificate_key     /etc/letsencrypt/live/crude-type.us/privkey.pem;
-ssl_trusted_certificate /etc/letsencrypt/live/crude-type.us/chain.pem;
