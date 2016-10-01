@@ -1,0 +1,30 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  server_name arth.jackf.me;
+
+  return 301 https://arth.jackf.me$request_uri;
+}
+
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  server_name arth.jackf.me;
+
+  root /var/www/arth.jackf.me;
+  index index.html index.htm;
+
+  gzip_static  on;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+
+  error_page 404 /404/index.html;
+
+  include /etc/nginx/conf.d/main.conf;
+  include /etc/nginx/conf.d/directive-only/tls-paths/arth.jackf.me;
+  include /etc/nginx/conf.d/directive-only/tls.conf;
+}
