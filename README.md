@@ -3,7 +3,6 @@
 ## sites
 - https://jackfahnestock.com → https://jackf.me
 - https://arth.jackf.me
-- https://lab.jackf.me
 - https://silly.graphics
 - https://silly-type.us
 
