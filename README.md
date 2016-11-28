@@ -12,7 +12,7 @@
 - HSTS
 
 ## other
-- HTTP/2 enabled
+- [HTTP/2 enabled](https://tools.keycdn.com/http2-test)
 - gzip compression enabled
 
 ## sources
