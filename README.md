@@ -9,7 +9,7 @@
 ## encryption
 - [A+ SSL Labs Score](https://www.ssllabs.com/ssltest/analyze.html?d=jackf.me&latest)
 - [Let's Encrypt cert](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-14-04)
-- HSTS
+- [HSTS](https://hstspreload.appspot.com/)
 
 ## other
 - [HTTP/2 enabled](https://tools.keycdn.com/http2-test)
