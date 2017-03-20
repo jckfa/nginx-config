@@ -5,6 +5,7 @@
 - https://arth.jackf.me
 - https://silly.graphics
 - https://silly-type.us
+- https://shittylogo.co
 
 ## encryption
 - [A+ SSL Labs Score](https://www.ssllabs.com/ssltest/analyze.html?d=jackf.me&latest)

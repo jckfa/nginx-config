@@ -1,5 +1,5 @@
 server {
-  listen 80;
+  listen      80;
   listen [::]:80;
 
   server_name arth.jackf.me;
@@ -8,7 +8,7 @@ server {
 }
 
 server {
-  listen 443 ssl http2;
+  listen      443 ssl http2;
   listen [::]:443 ssl http2;
 
   server_name arth.jackf.me;
@@ -16,11 +16,7 @@ server {
   root /var/www/arth.jackf.me;
   index index.html index.htm;
 
-  gzip_static  on;
-
-  location / {
-    try_files $uri $uri/ =404;
-  }
+  gzip_static on;
 
   error_page 404 /404/index.html;
 

@@ -1,10 +1,11 @@
 # used for setting up let's encrypt
 
 server {
-  listen 80;
+  listen      80;
   listen [::]:80;
   
-  server_name sitename;
+  server_name     sitename
+              www.sitename;
 
   root /var/www/sitename;
   index index.html index.htm;

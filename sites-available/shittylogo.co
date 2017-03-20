@@ -1,0 +1,34 @@
+server {
+  listen      80;
+  listen [::]:80;
+
+  server_name     shittylogo.co
+              www.shittylogo.co;
+
+  return 301 https://shittylogo.co$request_uri;
+}
+
+server {
+  listen      443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  server_name www.shittylogo.co;
+  return 301 https://shittylogo.co$request_uri;
+  
+  include /etc/nginx/conf.d/directive-only/tls-paths/shittylogo.co;
+  include /etc/nginx/conf.d/directive-only/tls.conf;
+}
+
+server {
+  listen      443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  server_name shittylogo.co;
+
+  root /var/www/shittylogo.co;
+  index index.html index.htm;
+
+  include /etc/nginx/conf.d/main.conf;
+  include /etc/nginx/conf.d/directive-only/tls-paths/shittylogo.co;
+  include /etc/nginx/conf.d/directive-only/tls.conf;
+}
