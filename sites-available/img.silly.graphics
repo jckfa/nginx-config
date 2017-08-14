@@ -14,7 +14,7 @@ server {
   server_name img.silly.graphics;
 
   root /var/www/img.silly.graphics;
-  index index.html index.htm;
+  index index.html index.htm 200.html;
 
   include /etc/nginx/conf.d/main.conf;
   include /etc/nginx/conf.d/directive-only/tls-paths/img.silly.graphics;
