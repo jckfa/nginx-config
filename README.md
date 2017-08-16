@@ -1,10 +1,11 @@
 # my nginx configs
 
 ## sites
-- https://jackfahnestock.com → https://jackf.me
-- https://arth.jackf.me
+- https://jackf.me
 - https://silly.graphics
-- https://silly-type.us
+- https://img.silly.graphics
+- https://studios.silly.graphics
+- https://arth.jackf.me
 - https://shittylogo.co
 
 ## encryption
@@ -13,8 +14,8 @@
 - [HSTS](https://hstspreload.appspot.com/)
 
 ## other
-- [HTTP/2 enabled](https://tools.keycdn.com/http2-test)
-- gzip compression enabled
+- [HTTP/2](https://tools.keycdn.com/http2-test)
+- gzip
 
 ## sources
 - https://github.com/h5bp/server-configs-nginx
