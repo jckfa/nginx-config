@@ -1,26 +1,19 @@
 server {
   listen      80;
   listen [::]:80;
-
-  server_name notes.jackf.me;
-
-  return 301 https://notes.jackf.me$request_uri;
+  server_name txt.jackf.me;
+  return 301 https://txt.jackf.me$request_uri;
 }
 
 server {
   listen      443 ssl http2;
   listen [::]:443 ssl http2;
-
-  server_name notes.jackf.me;
-
-  root /var/www/notes.jackf.me;
+  server_name txt.jackf.me;
+  root /var/www/txt.jackf.me;
   index index.html index.htm;
-
-  gzip_static on;
-
+  # gzip_static on;
   error_page 404 /404/index.html;
-
   include /etc/nginx/conf.d/main.conf;
-  include /etc/nginx/conf.d/directive-only/tls-paths/notes.jackf.me;
+  include /etc/nginx/conf.d/directive-only/tls-paths/txt.jackf.me;
   include /etc/nginx/conf.d/directive-only/tls.conf;
 }
