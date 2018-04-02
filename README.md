@@ -3,10 +3,10 @@
 ## sites
 - https://jackf.me
 - https://silly.graphics
-- https://img.silly.graphics
-- https://studios.silly.graphics
+- https://img.silly.graphics > https://pubdomordie.club
+- https://studios.silly.graphics > https://stuuudios.com
 - https://arth.jackf.me
-- https://shittylogo.co
+- https://whatcheer.pizza
 
 ## encryption
 - [A+ SSL Labs Score](https://www.ssllabs.com/ssltest/analyze.html?d=jackf.me&latest)
