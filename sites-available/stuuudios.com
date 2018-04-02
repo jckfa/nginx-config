@@ -23,6 +23,7 @@ server {
   server_name stuuudios.com;
   root /var/www/stuuudios.com;
   index index.html index.htm;
+  gzip_static on;
   error_page 404 /404/index.html;
   include /etc/nginx/conf.d/main.conf;
   include /etc/nginx/conf.d/directive-only/tls-paths/stuuudios.com;

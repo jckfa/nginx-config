@@ -1,0 +1,28 @@
+server {
+  listen      80;
+  listen [::]:80;
+  server_name     whatcheer.pizza
+              www.whatcheer.pizza;
+  return 301 https://whatcheer.pizza$request_uri;
+}
+
+server {
+  listen      443 ssl http2;
+  listen [::]:443 ssl http2;
+  server_name www.whatcheer.pizza;
+  return 301 https://whatcheer.pizza$request_uri;
+  include /etc/nginx/conf.d/directive-only/tls-paths/whatcheer.pizza;
+  include /etc/nginx/conf.d/directive-only/tls.conf;
+}
+
+server {
+  listen      443 ssl http2;
+  listen [::]:443 ssl http2;
+  server_name whatcheer.pizza;
+  root /var/www/whatcheer.pizza;
+  index index.html index.htm;
+  error_page 404 /404/index.html;
+  include /etc/nginx/conf.d/main.conf;
+  include /etc/nginx/conf.d/directive-only/tls-paths/whatcheer.pizza;
+  include /etc/nginx/conf.d/directive-only/tls.conf;
+}
