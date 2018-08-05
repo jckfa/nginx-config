@@ -1,0 +1,28 @@
+server {
+  listen      80;
+  listen [::]:80;
+  server_name     usmd.club
+              www.usmd.club;
+  return 301 https://usmd.club$request_uri;
+}
+
+server {
+  listen      443 ssl http2;
+  listen [::]:443 ssl http2;
+  server_name www.usmd.club;
+  return 301 https://usmd.club$request_uri;
+  include /etc/nginx/conf.d/directive-only/tls-paths/usmd.club;
+  include /etc/nginx/conf.d/directive-only/tls.conf;
+}
+
+server {
+  listen      443 ssl http2;
+  listen [::]:443 ssl http2;
+  server_name usmd.club;
+  root /var/www/usmd.club;
+  index index.html index.htm;
+  error_page 404 /404/index.html;
+  include /etc/nginx/conf.d/main.conf;
+  include /etc/nginx/conf.d/directive-only/tls-paths/usmd.club;
+  include /etc/nginx/conf.d/directive-only/tls.conf;
+}

@@ -1,0 +1,22 @@
+
+server {
+  listen      80;
+  listen [::]:80;
+  server_name     sublet.site
+              www.sublet.site;
+  return 301 https://www.facebook.com/groups/683411031786289/permalink/1532033110257406/;
+}
+
+server {
+  listen      443 ssl http2;
+  listen [::]:443 ssl http2;
+  server_name     sublet.site
+              www.sublet.site;
+  root /var/www/sublet.site;
+  index index.html index.htm;
+  error_page 404 /404/index.html;
+  return 301 https://www.facebook.com/groups/683411031786289/permalink/1532033110257406/;
+  include /etc/nginx/conf.d/main.conf;
+  include /etc/nginx/conf.d/directive-only/tls-paths/sublet.site;
+  include /etc/nginx/conf.d/directive-only/tls.conf;
+}
