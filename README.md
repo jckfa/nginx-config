@@ -1,13 +1,5 @@
 # my nginx configs
 
-## sites
-- https://jackf.me
-- https://silly.graphics
-- https://img.silly.graphics > https://pubdomordie.club
-- https://studios.silly.graphics > https://stuuudios.com
-- https://arth.jackf.me
-- https://whatcheer.pizza
-
 ## encryption
 - [A+ SSL Labs Score](https://www.ssllabs.com/ssltest/analyze.html?d=jackf.me&latest)
 - [Let's Encrypt cert](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-14-04)
